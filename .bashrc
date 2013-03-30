@@ -161,4 +161,3 @@ if [ -f $1 ] ; then
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
-
