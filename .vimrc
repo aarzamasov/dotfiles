@@ -1,4 +1,4 @@
-colorscheme molokai
+colorscheme solarized
 set pastetoggle=<F2>
 set foldmethod=syntax
 syn region CodeBlock start=/{/ end=/}/ transparent fold
