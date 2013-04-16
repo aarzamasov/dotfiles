@@ -10,7 +10,22 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+
 exec ~/dotfiles/startupProgramsiWork.sh
+exec /usr/bin/pac
+exec google-chrome
+exec parcellite
+exec zim
+exec keepassx
+exec pidgin
+##exec u1sdtool
+exec sublime
+exec sqlyog
+#exec sakura -n 2
+exec urxvt
+exec nemo
+
+
  font for window titles. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 
@@ -28,7 +43,7 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec sakura
+bindsym $mod+Return exec urxvt 
 # kill focused window
 bindsym $mod+Shift+Q kill
 
@@ -41,6 +56,7 @@ focus_follows_mouse no
 
 #for_window [class="^Pidgin$"] floating enable
 for_window [class="^Nemo$" instance="file_progress"] floating enable
+for_window [title="Time Tracker"] floating enable
 #for_window [class="^Pidgin$" title="^Buddy List$"] floating disable
 # change focus
 bindsym $mod+j focus left
@@ -96,6 +112,22 @@ bindsym $mod+q [title="^sakura"] focus
 bindsym $mod+g [title="Google Chrome$"] focus
 bindsym $mod+t [title="Sublime Text"] focus
 bindsym $mod+y [title="^SQLyog"] focus
+bindsym $mod+o [title="Skype"] focus
+
+
+## Assign workspaces to programs
+assign [class="^Pidgin$" title="^Buddy List$"] 1
+assign [title="Sublime Text"] 1
+assign [title="Google Chrome$"] 1
+assign [class="^Zim"] 1
+assign [class="^Pac"] 1
+assign [title="Skype"] 3
+assign [title="KeePassX$"] 3
+assign [title="^KeePassX"] 3
+assign [class="^Nemo$"] 8
+assign [title="Desktop$"] 8
+assign [class="^libreoffice-startcenter$" instance="^VCLSalFrame.DocumentWindow$"] 10
+
 
 # focus the child container
 #bindcode $mod+d focus child

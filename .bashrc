@@ -98,17 +98,20 @@ fi
 # ---[ Alias Section ]-------------------------------------------------
 eval `dircolors`
 alias c='clear'
+alias gr='grep -i'
 alias l='ls -CF'
 alias cd..='cd ..'
 alias ...='cd ../..'
 alias ssh='ssh -2'
 alias pa='ps aux'
+alias pag='ps aux | grep -i'
 alias vi='vim -c ":cd %:p:h"'
 #alias mc='mc -bs'
 alias man='PAGER=less man -a'
 alias cdc='cd ~; clear'
 alias d='dirs -v'
 alias h=history
+alias hg='history | grep'
 alias top=htop
 alias grep=egrep
 alias ls='ls --color=auto'
@@ -161,3 +164,4 @@ if [ -f $1 ] ; then
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+

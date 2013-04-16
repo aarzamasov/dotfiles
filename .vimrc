@@ -1,4 +1,4 @@
-colorscheme solarized
+colorscheme murphy  
 set pastetoggle=<F2>
 set foldmethod=syntax
 syn region CodeBlock start=/{/ end=/}/ transparent fold
