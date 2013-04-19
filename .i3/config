@@ -12,18 +12,16 @@
 set $mod Mod4
 
 exec ~/dotfiles/startupProgramsiWork.sh
-##exec /usr/bin/pac
+exec /usr/bin/pac
 exec google-chrome
 exec parcellite
-##exec zim
-##exec keepassx
-##exec pidgin
-####exec u1sdtool
+exec zim
+exec keepassx
+exec u1sdtool
 exec sublime
-##exec sqlyog
-###exec sakura -n 2
-##exec urxvt
-##exec nemo
+exec sqlyog
+exec urxvt
+exec nemo
 
 
  font for window titles. ISO 10646 = Unicode
@@ -108,7 +106,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a [class="^Pidgin$" title="^Buddy List$"] focus
 bindsym $mod+z [class="^Zim"] focus
 bindsym $mod+p [class="^Pac"] focus
-bindsym $mod+q [title="^sakura"] focus
+bindsym $mod+q [class="^URxvt$"] focus
 bindsym $mod+g [title="Google Chrome$"] focus
 bindsym $mod+t [title="Sublime Text"] focus
 bindsym $mod+y [title="^SQLyog"] focus
