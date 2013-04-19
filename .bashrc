@@ -59,14 +59,7 @@ SELECT="if [ \$? = 0 ]; then echo -n \"${SMILEY}\"; else echo -n \"${FROWNY}\"; 
 GIT="__git_ps1 \" (%s)\";"
 PS1="${RESET}${LIGHTGRAY}\u${GRAY}@${WHITE}\h${GRAY}:\`${SELECT}\`${RED}\`${GIT}\`# ${WHITE}"
 
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
-    ;;
-*)
-    ;;
-esac
+
 
 function _exit()
 {
