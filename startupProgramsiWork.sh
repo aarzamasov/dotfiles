@@ -1,7 +1,7 @@
 #!/bin/bash
 xset r rate 150 100
 setxkbmap "us,ru" ",winkeys" "grp:caps_toggle"
-
+exit 1;
 if [ "`grep  "model name" /proc/cpuinfo | head -n1`" == "model name	: Intel(R) Core(TM) i7-2670QM CPU @ 2.20GHz" ]
 then
 	if zenity --question --text="Применить настройки большого экрана?"; then

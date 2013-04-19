@@ -12,18 +12,18 @@
 set $mod Mod4
 
 exec ~/dotfiles/startupProgramsiWork.sh
-exec /usr/bin/pac
+##exec /usr/bin/pac
 exec google-chrome
 exec parcellite
-exec zim
-exec keepassx
-exec pidgin
-##exec u1sdtool
+##exec zim
+##exec keepassx
+##exec pidgin
+####exec u1sdtool
 exec sublime
-exec sqlyog
-#exec sakura -n 2
-exec urxvt
-exec nemo
+##exec sqlyog
+###exec sakura -n 2
+##exec urxvt
+##exec nemo
 
 
  font for window titles. ISO 10646 = Unicode
