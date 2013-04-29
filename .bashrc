@@ -63,7 +63,7 @@ PS1="${RESET}${LIGHTGRAY}\u${GRAY}@${WHITE}\h${GRAY}:\`${SELECT}\`${RED}\`${GIT}
 
 function _exit()
 {
-    echo -e "Good Bie `whoami`!"
+    echo -e "...Through the Looking-Glass..."
 }
 trap _exit EXIT
 
