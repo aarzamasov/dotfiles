@@ -94,6 +94,7 @@ alias vi='vim -c ":cd %:p:h"'
 alias man='PAGER=less man -a'
 alias cdc='cd ~; clear'
 alias d='dirs -v'
+alias p='pwd'
 alias h=history
 alias hg='history | grep'
 alias top=htop
